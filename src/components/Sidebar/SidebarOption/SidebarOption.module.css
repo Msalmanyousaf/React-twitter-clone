@@ -1,0 +1,35 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.icon{
+    padding: 20px;
+}
+
+.sidebarOption > h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOption:hover{
+    border-radius: 30px;
+    background-color: #e8f5fe;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+.sidebarOptionActive{
+    color: var(--twitter-color);
+}
+@media (max-height: 657px){
+    .sidebarOption > h2{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .icon{
+        padding: 13px;
+    }
+}
